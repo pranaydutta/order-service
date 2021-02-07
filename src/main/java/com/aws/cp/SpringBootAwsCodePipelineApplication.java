@@ -20,6 +20,7 @@ public class SpringBootAwsCodePipelineApplication {
 	@GetMapping
 	public List<Order> fetchOrders()
 	{
+		System.out.println("order-service");
 		return orderDao.getOrders();
 	}
 
